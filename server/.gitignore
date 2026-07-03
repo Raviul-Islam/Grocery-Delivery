@@ -1,0 +1,6 @@
+node_nodules
+.env
+.env.local
+.env.*.local
+*.key
+secrets/
