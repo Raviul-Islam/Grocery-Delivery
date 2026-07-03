@@ -1,3 +1,4 @@
+import { Request, Response } from "express";
 import { prisma } from "../config/prisma.js";
 
 //GET /api/product/flash-deals
@@ -19,7 +20,7 @@ export const getFlashDeals = async (req: Request, res: Response) => {
 };
 
 //GET /api/products
-export const getProduct = async (req: Request, res: Response) => {
+export const getProducts = async (req: Request, res: Response) => {
   const { category, search, minPrice, maxPrice, sort } = req.query;
 
   const where: any = {};
@@ -79,14 +80,17 @@ export const createProduct = async (req: Request, res: Response) => {
 
 //PUT /api/products/:id
 export const updateProduct = async (req: Request, res: Response) => {
-  const product = await prisma.product.update({where:{id:req.params.id as string} data: req.body });
+  const product = await prisma.product.update({
+    where: { id: req.params.id as string },
+    data: req.body,
+  });
   res.status(201).json({ product });
-  res.json({product})
+  res.json({ product });
 };
 
 //PUT /api/products/:id
 export const deleteProduct = async (req: Request, res: Response) => {
-  await prisma.product.delete({where:{id:req.params.id as string}});
+  await prisma.product.delete({ where: { id: req.params.id as string } });
   res.status(201).json({ product });
-  res.json({message: Deleted})
+  res.json({ message: Deleted });
 };

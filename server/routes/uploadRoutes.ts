@@ -1,3 +1,4 @@
+import express from "express";
 import multer from "multer";
 import auth from "../middleware/auth.js";
 import cloudinary from "../config/cloudinary.js";

@@ -1,9 +1,11 @@
-import { Express } from "express";
+import express from "express";
 import {
   createProduct,
   getFlashDeals,
   getProduct,
   updateProduct,
+  deleteProduct,
+  getProducts,
 } from "../controllers/productController.js";
 import auth from "../middleware/auth.js";
 import admin from "../middleware/admin.js";
