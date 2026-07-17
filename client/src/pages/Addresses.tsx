@@ -36,7 +36,7 @@ const Addresses = () => {
     setEditingId(null);
   };
 
-  const getLocation = (retries: 3): Promise<{ lat: number; lng: number }> => {
+  const getLocation = (retries = 3): Promise<{ lat: number; lng: number }> => {
     return new Promise((resolve, reject) => {
       if (!navigator.geolocation) {
         reject(new Error("Geolocation not supported"));
