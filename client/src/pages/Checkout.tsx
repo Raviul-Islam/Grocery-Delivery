@@ -20,8 +20,8 @@ const Checkout = () => {
   const navigate = useNavigate();
   const currency = import.meta.env.VITE_CURRENCY_SYMBOL || "$";
 
-  const [items, cartTotal, clearCart] = useCart();
-  const [user] = useAuth();
+  const { items, cartTotal, clearCart } = useCart();
+  const { user } = useAuth();
 
   const [step, setStep] = useState("address");
   const [loading, setLoading] = useState(false);
