@@ -13,10 +13,10 @@ const AppPromoBanner = () => {
             {appPromoBannerData.description}
           </p>
           <div className="flex flex-wrap gap-3 justify-center md:justify-self-start">
-            <button className="px-6 py-3 bg-white text-green-950 font-semibold rounded-xl hover:bg-orange-100">
+            <button onClick={() => alert("App Store button clicked!")} className="px-6 py-3 bg-white text-green-950 font-semibold rounded-xl hover:bg-orange-100">
               App Store
             </button>
-            <button className="px-6 py-3 bg-white/10 text-white font-semibold rounded-xl hover:bg-white/20 transition-colors border border-white/20">
+            <button onClick={() => alert("Google Play button clicked!")} className="px-6 py-3 bg-white/10 text-white font-semibold rounded-xl hover:bg-white/20 transition-colors border border-white/20">
               Google Play
             </button>
           </div>

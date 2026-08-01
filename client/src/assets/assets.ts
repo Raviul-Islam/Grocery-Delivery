@@ -61,14 +61,14 @@ export const deliveryPartnerLoginImage =
 export const appPromoBannerData = {
   title: "Get fresh groceries in minutes",
   description:
-    "Download the Instacart app for exclusive deals, real-time tracking, and the freshest selection delivered right to your door.",
+    "Download the FreshMart app for exclusive deals, real-time tracking, and the freshest selection delivered right to your door.",
 };
 
 export const footerData = {
   brand: {
-    name: "Instacart",
+    name: "FreshMart",
     description:
-      "Bringing fresh, organic groceries straight from local farms to your doorstep. Nourish your home with Earth's finest.",
+      "Bringing fresh, organic groceries straight from local farms to your doorstep. Nourish your home with farm's finest.",
     socials: [
       { icon: SiFacebook, link: "#" },
       { icon: SiX, link: "#" },
@@ -98,13 +98,13 @@ export const footerData = {
   ],
 
   contact: [
-    { icon: MapPinIcon, text: "123 Green Valley Rd, Portland" },
-    { icon: PhoneIcon, text: "+1 (111) 123-4567" },
-    { icon: MailIcon, text: "hello@example.com" },
+    { icon: MapPinIcon, text: "Chhattisgarh, India" },
+    { icon: PhoneIcon, text: "+91-1234567890" },
+    { icon: MailIcon, text: "raviulislam3@gmail.com" },
   ],
 
   bottom: {
-    copyright: "© 2026 Greatstack. All rights reserved.",
+    copyright: "© 2026 Raviul Islam. All rights reserved.",
     links: [
       { label: "Privacy Policy", href: "#" },
       { label: "Terms of Service", href: "#" },

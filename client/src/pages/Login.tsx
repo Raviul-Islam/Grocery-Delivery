@@ -2,7 +2,7 @@ import { useState } from "react";
 import { heroSectionData } from "../assets/assets";
 import { Link } from "react-router-dom";
 import {
-  BikeIcon,
+  ShoppingCartIcon,
   Loader2Icon,
   LockIcon,
   MailIcon,
@@ -47,7 +47,7 @@ const Login = () => {
         />
         <div className="relative text-center px-12">
           <h2 className="text-4xl font-semibold text-white mb-4">
-            Welcome back to Instacart
+            Welcome back to FreshMart
           </h2>
           <p className="text-white/60 font-serif text-xl max-w-sm mx-auto">
             Fresh groceries and organic produce, delivered to your doorstep
@@ -61,9 +61,9 @@ const Login = () => {
           {/**form header message */}
           <div className="text-center mb-8">
             <Link to="/" className="inline-flex items-center gap-2 mb-6">
-              <BikeIcon className="size-8 text-app-green" />
+              <ShoppingCartIcon className="size-8 text-app-green" />
               <span className="text-2xl font-semibold text-app-green">
-                Instacart
+                FreshMart
               </span>
             </Link>
             <h1>
